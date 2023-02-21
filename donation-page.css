@@ -1,0 +1,174 @@
+body {
+  background-image: url('images/GettyImages-1344435554-797x385.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 2% 10% 10% 10%;
+    background: linear-gradient(
+                to right bottom,
+                rgba(240, 235, 235, 0.9),
+                rgba(255, 255, 255, 0.9)
+    );
+    box-shadow: 4px 4px 5px #333;
+}
+
+.column{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 50%;
+    min-width: 20%;
+}
+
+.amount{
+    max-width: 25%;
+    min-width: 20%;
+}
+
+.row{
+    display: inline-flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.payment{
+    gap: 25%;
+}
+
+input[type=text],input[type=number],input[type=email],input[type="password"], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  label {
+    display: inline-block;
+  }
+
+.resize {
+    width: 70%;
+}
+
+
+
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn {
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .card {
+    display: none;
+  }
+
+  .paypal{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin: 30%;
+  }
+
+  .paypalbtn{
+    background-color: #00A6CC;
+    border-color:#00A6CC;
+    color:#ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 3px;
+    line-height: 1.5em;
+    text-decoration:none;
+  }
+
+  .paypalbtn:hover{
+    background-color:#00748E;
+    text-decoration:underline;
+  }
+
+  .creditcardbtn{
+    height:40px;
+    width:120px;
+    border:none;
+    color:#fff;
+    font-size:12px;
+    background-color:#4597ff;
+    border-radius: 3px;
+    cursor:pointer;
+    transition:all 0.5s;
+  }
+
+  .creditcardbtn:hover{
+    background-color:blue;
+  }
